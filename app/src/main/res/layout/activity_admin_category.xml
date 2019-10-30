@@ -21,7 +21,7 @@
         android:splitMotionEvents="false">
 
         <ImageButton
-            android:id="@+id/menu"
+            android:id="@+id/admin_check_orders"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/home_btn_menu_height"
             android:background="@null"
@@ -29,7 +29,7 @@
             android:paddingTop="@dimen/home_btn_menu_padding"
             android:paddingBottom="@dimen/home_btn_menu_padding"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_menu_black_24dp" />
+            app:srcCompat="@drawable/ic_admin_check_orders" />
 
         <TextView
             android:id="@+id/title"
@@ -40,6 +40,22 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/admin_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/dark_green"
+            android:paddingLeft="@dimen/home_btn_menu_padding"
+            android:paddingTop="@dimen/home_btn_menu_padding"
+            android:paddingBottom="18dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_admin_logout" />
     </RelativeLayout>
 
 

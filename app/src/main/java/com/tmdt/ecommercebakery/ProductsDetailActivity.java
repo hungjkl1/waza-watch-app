@@ -129,7 +129,10 @@ public class ProductsDetailActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            cartListRef.child("Admin View").child(productID)
+                            cartListRef.child("Admin View")
+                                    .child(Prevalent.currentOnlineUser.getPhone())
+                                    .child("Products")
+                                    .child(productID)
                                     .updateChildren(cartMap)
                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override

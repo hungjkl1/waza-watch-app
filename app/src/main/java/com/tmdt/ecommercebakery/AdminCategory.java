@@ -9,12 +9,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class AdminCategory extends AppCompatActivity {
 
     private ImageView imgCake,  imgCrossant;
     private ImageView imgLightmeal, imgDessert;
+    private ImageButton LogoutBtn, CheckOrdersBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,8 @@ public class AdminCategory extends AppCompatActivity {
         imgCrossant = (ImageView)findViewById(R.id.imgCrossant);
         imgLightmeal= (ImageView)findViewById(R.id.imgLightmeal);
         imgDessert = (ImageView)findViewById(R.id.imgDessert);
+        LogoutBtn = findViewById(R.id.admin_logout);
+        CheckOrdersBtn = findViewById(R.id.admin_check_orders);
 
         imgCake.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +70,24 @@ public class AdminCategory extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AdminCategory.this, AdminAddNewProduct.class);
                 intent.putExtra("category", "Dessert");
+                startActivity(intent);
+            }
+        });
+
+        LogoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminCategory.this, MainActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        CheckOrdersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminCategory.this, AdminNewOrdersActivity.class);
                 startActivity(intent);
             }
         });
