@@ -26,6 +26,11 @@
     <color name="light_green">#DEFABB</color>
     <color name="chill">#FAF7BB</color>
 
+    <color name="jimbo_primary">#2D142C</color>
+    <color name="jimbo_secondary">#510A32</color>
+    <color name="jimbo_balance">#801336</color>
+    <color name="jimbo_light">#C72C41</color>
+    <color name="jimbo_highlight">#EE4540</color>
 
     <color name="edit_text_highlight_color">@color/green2</color>
 </resources>

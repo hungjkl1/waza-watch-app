@@ -6,11 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="12"
-    android:background="@drawable/background12"
+    android:background="@color/jimbo_primary"
     tools:context=".AdminCategory">
 
     <!--TOOL BAR-->
-
     <RelativeLayout
         android:id="@+id/menuBar"
         android:layout_weight="0"
@@ -58,7 +57,16 @@
             app:srcCompat="@drawable/ic_admin_logout" />
     </RelativeLayout>
 
-
+    <TextView
+        android:id="@+id/Big_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:text="Create New Watch"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
 
     <!--DANH MỤC-->
     <GridLayout
@@ -66,8 +74,8 @@
         android:layout_weight="12"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:columnCount="2"
-        android:rowCount="3"
+        android:columnCount="1"
+        android:rowCount="1"
         android:columnOrderPreserved="false">
 
         <androidx.cardview.widget.CardView
@@ -82,7 +90,7 @@
             app:cardCornerRadius="8dp">
             <LinearLayout
                 android:id="@+id/linear1_category_layout"
-                android:background="@color/light_green"
+                android:background="@color/jimbo_secondary"
                 android:layout_width="wrap_content"
                 android:layout_height="160dp"
                 android:layout_gravity="center"
@@ -91,16 +99,16 @@
                 <ImageView
                     android:id="@+id/imgCake"
                     android:layout_width="wrap_content"
-                    android:layout_height="116dp"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:scaleType="fitCenter"
                     android:paddingTop="10dp"
-                    android:src="@drawable/icon_cake" />
+                    android:src="@drawable/watch_add" />
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:background="@color/chill"
+                    android:layout_height="45px"
+                    android:background="@color/jimbo_balance"
                     android:text="Cake"
                     android:gravity="center"
                     android:textAlignment="center"
@@ -109,124 +117,5 @@
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
-            <LinearLayout
-                android:id="@+id/linear2_category_layout"
-                android:background="@color/light_green"
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgCrossant"
-                    android:layout_width="wrap_content"
-                    android:layout_height="116dp"
-                    android:layout_gravity="center"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/icon_crossant" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:background="@color/chill"
-                    android:text="Crossant"
-                    android:gravity="center"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
-            <LinearLayout
-                android:id="@+id/linear3_category_layout"
-                android:background="@color/light_green"
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgLightmeal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="116dp"
-                    android:layout_gravity="center"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/icon_lightmeal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:background="@color/chill"
-                    android:gravity="center"
-                    android:text="Light Meal"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
-            <LinearLayout
-                android:id="@+id/linear4_category_layout"
-                android:background="@color/light_green"
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imgDessert"
-                    android:layout_width="wrap_content"
-                    android:layout_height="116dp"
-                    android:layout_gravity="center"
-                    android:paddingTop="10dp"
-                    android:src="@drawable/icon_dessert" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:background="@color/chill"
-                    android:gravity="center"
-                    android:text="Dessert"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
     </GridLayout>
 </LinearLayout>

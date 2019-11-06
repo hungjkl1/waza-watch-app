@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "72070824593",
-    "firebase_url": "https://ecommercebakery.firebaseio.com",
-    "project_id": "ecommercebakery",
-    "storage_bucket": "ecommercebakery.appspot.com"
+    "project_number": "949400965063",
+    "firebase_url": "https://wazawatch.firebaseio.com",
+    "project_id": "wazawatch",
+    "storage_bucket": "wazawatch.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:72070824593:android:68b7d51cc0eecdbed4b530",
+        "mobilesdk_app_id": "1:949400965063:android:63c148773e45b16a0ad3e2",
         "android_client_info": {
-          "package_name": "com.tmdt.ecommercebakery"
+          "package_name": "com.tmdt.wazawatch"
         }
       },
       "oauth_client": [
         {
-          "client_id": "72070824593-p46g827urvqdtmk4nu50c6rlbr9d5nt2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.tmdt.ecommercebakery",
-            "certificate_hash": "69126469dcfdf3c6b71fe50da74181793206eddf"
-          }
-        },
-        {
-          "client_id": "72070824593-ut8sm4fhs4h0corn6tjeobe3bknl1soi.apps.googleusercontent.com",
+          "client_id": "949400965063-531alsbf5f2hrsu4gacsmrpvgpg31mpo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTXMvY3bPDPTymrDd37JZen9x_vd_3FhY"
+          "current_key": "AIzaSyAj2Cv6Uo_9txCHARNdEB3j_KmMSXd1bf4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "72070824593-ut8sm4fhs4h0corn6tjeobe3bknl1soi.apps.googleusercontent.com",
+              "client_id": "949400965063-531alsbf5f2hrsu4gacsmrpvgpg31mpo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

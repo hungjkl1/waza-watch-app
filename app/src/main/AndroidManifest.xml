@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tmdt.ecommercebakery">
+    package="com.tmdt.wazawatch">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -12,24 +12,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminUserProductsActivity"></activity>
-        <activity android:name=".AdminNewOrdersActivity" />
-        <activity android:name=".ProductsDetailActivity" />
-        <activity android:name=".ComfirmFinalOrderActivity" />
-        <activity android:name=".CartActivity" />
-        <activity android:name=".ProductScreen" />
-        <activity android:name=".ProfileScreen" />
-        <activity android:name=".ContactScreen" />
-        <activity android:name=".LocationScreen" />
-        <activity android:name=".AdminAddNewProduct" />
-        <activity android:name=".AdminCategory" />
+        <activity android:name="com.tmdt.wazawatch.AdminUserProductsActivity"></activity>
+        <activity android:name="com.tmdt.wazawatch.AdminNewOrdersActivity" />
+        <activity android:name="com.tmdt.wazawatch.ProductsDetailActivity" />
+        <activity android:name="com.tmdt.wazawatch.ComfirmFinalOrderActivity" />
+        <activity android:name="com.tmdt.wazawatch.CartActivity" />
+        <activity android:name="com.tmdt.wazawatch.ProductScreen" />
+        <activity android:name="com.tmdt.wazawatch.ProfileScreen" />
+        <activity android:name="com.tmdt.wazawatch.ContactScreen" />
+        <activity android:name="com.tmdt.wazawatch.LocationScreen" />
+        <activity android:name="com.tmdt.wazawatch.AdminAddNewProduct" />
+        <activity android:name="com.tmdt.wazawatch.AdminCategory" />
         <activity
-            android:name=".Home"
+            android:name="com.tmdt.wazawatch.Home"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SignIn" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.tmdt.wazawatch.SignUp" />
+        <activity android:name="com.tmdt.wazawatch.SignIn" />
+        <activity android:name="com.tmdt.wazawatch.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

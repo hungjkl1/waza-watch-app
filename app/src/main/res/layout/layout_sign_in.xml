@@ -13,15 +13,14 @@
         android:layout_height="match_parent"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:alpha="0.7"
-        android:background="@color/light_gray" />
+        android:background="@color/jimbo_primary" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="495dp"
         android:layout_marginBottom="0dp"
-        android:background="@color/white" />
+        android:background="@color/jimbo_secondary" />
 
     <!--LOGO-->
     <ImageView
@@ -31,7 +30,7 @@
         android:layout_height="180dp"
         android:background="@null"
         android:scaleType="centerInside"
-        android:src="@drawable/bakeryicon"
+        android:src="@drawable/logo"
         android:layout_marginLeft="110dp" />
 
     <!--LOGIN-->
@@ -43,7 +42,7 @@
         android:layout_marginLeft="150dp"
         android:text="@string/create_sign_in"
         android:textSize="@dimen/create_account_size"
-        android:textColor="@color/dark_green"
+        android:textColor="@color/white"
         android:fontFamily="cursive"/>
 
     <!--EMAIL-->
@@ -56,7 +55,7 @@
         android:layout_marginStart="65dp"
         android:text="@string/text_phone"
         android:textSize="@dimen/text_email"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="sans-serif"/>
 
     <EditText
@@ -78,7 +77,7 @@
         android:layout_height="2dp"
         android:layout_below="@id/edt_phone"
         android:layout_marginStart="50dp"
-        android:background="@color/dark_green" />
+        android:background="@color/white" />
 
     <!--PASSWORD-->
 
@@ -91,7 +90,7 @@
         android:layout_marginStart="65dp"
         android:text="@string/text_password"
         android:textSize="@dimen/text_email"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="sans-serif"/>
 
     <EditText
@@ -112,7 +111,7 @@
         android:layout_height="2dp"
         android:layout_below="@id/edt_pass"
         android:layout_marginStart="50dp"
-        android:background="@color/dark_green" />
+        android:background="@color/white" />
 
     <!--remember me-->
     <LinearLayout
@@ -126,6 +125,8 @@
             android:layout_height="wrap_content"
             style="@style/Material.Drawable.CheckBox"
             android:text="Remember Me"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
             android:gravity="center_vertical"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -137,7 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Forget Password"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:gravity="center_vertical"
             android:textSize="16sp"
             android:textStyle="bold"
@@ -156,12 +157,13 @@
             android:id="@+id/btn_sign_in"
             android:text="@string/sign_in"
             android:textColor="@color/white"
-            android:background="@color/dark_green"
+            android:background="@color/jimbo_highlight"
             android:layout_gravity="center"
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_marginStart="60dp"
-            android:textSize="@dimen/sign_in_btn_text_size"/>
+            android:textSize="@dimen/sign_in_btn_text_size"
+            android:layout_marginLeft="60dp" />
     </LinearLayout>
 
     <!-- FOOTER SIGN IN -->
@@ -177,7 +179,7 @@
             android:background="@null"
             android:padding="10dp"
             android:textSize="@dimen/sign_text_size"
-            android:textColor="@color/dark_green"
+            android:textColor="@color/white"
             android:textAllCaps="true"
             android:text="@string/text_im_not_admin"
             android:layout_width="wrap_content"
@@ -190,7 +192,7 @@
             android:background="@null"
             android:padding="10dp"
             android:textSize="@dimen/sign_text_size"
-            android:textColor="@color/dark_green"
+            android:textColor="@color/white"
             android:textAllCaps="true"
             android:text="@string/text_im_admin"
             android:layout_width="wrap_content"
